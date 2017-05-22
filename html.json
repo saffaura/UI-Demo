@@ -1,4 +1,0 @@
-[
-  "./src/*.html",
-  "./src/app/**/*.html"
-]
