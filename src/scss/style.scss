@@ -1,0 +1,64 @@
+@import 'sidebarLeft';
+@import 'dashboard';
+@import 'messageboard';
+@import 'toolbar';
+@import 'sidebarRight';
+
+$backgroundColor: #2A2D33;
+
+@font-face {
+  font-family: 'helvetica-neue';
+  src: url('../fonts/helvetica-thin.tff') format('truetype'),
+  url('../fonts/helvetica-thin.woff') format('woff'),
+  url('../fonts/helvetica-thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('../fonts/proxima-nova.otf') format('opentype'),
+  url('../fonts/proxima-nova.woff') format('woff'),
+  url('../fonts/proxima-nova.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova-thin';
+  src: url('../fonts/proxima-nova-thin.otf') format('opentype'),
+  url('../fonts/proxima-nova-thin.woff') format('woff'),
+  url('../fonts/proxima-nova-thin.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima-nova-bold';
+  src: url('../fonts/proxima-nova-bold.otf') format('opentype'),
+  url('../fonts/proxima-nova-bold.woff') format('woff'),
+  url('../fonts/proxima-nova-bold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html, #main {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 100%;
+  background-color: #ededed;
+}
+
+#main {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+}

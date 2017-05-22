@@ -1,0 +1,97 @@
+sidebar-left {
+  $backgroundColor: #2A2D33;
+  $iconColor: #63666e;
+  $textColor: #aeaeb0;
+  $hoverColor: white;
+  $hoverBackground: #656c7e;
+
+  display: table-cell;
+  vertical-align: top;
+  background-color: $backgroundColor;
+  height: 100%;
+
+  %navItem {
+    padding: 0px 8px;
+  }
+
+  .navbar {
+    width: 185px;
+    background-color: $backgroundColor;
+    border: none;
+    border-radius: 0px !important;
+    transition: all 0.5s ease;
+  }
+
+  hr {
+    width: 100%;
+    margin: 0px;
+    border-color: #63666e;
+  }
+
+  li {
+    a {
+      color: $textColor;
+      font-size: 1.3em;
+      font-weight: bold;
+      padding: 8px 15px !important;
+
+      &:hover, &:hover i {
+        background-color: $hoverBackground !important;
+        color: $hoverColor !important;
+      }
+
+      i {
+        color: $iconColor;
+        font-size: 1.5em !important;
+        @extend %navItem;
+      }
+    }
+  }
+
+  .collapsed {
+    display: inline;
+    float: right;
+    background-color: #464b57;
+    padding: 10px 7px;
+
+    i {
+      color: white;
+      font-size: 1.0em;
+    }
+
+    &:hover {
+      background-color: $hoverBackground;
+    }
+
+    &:focus {
+      background-color: $hoverBackground;
+    }
+  }
+
+  .navbar-text {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #7f8083;
+    font-size: 1.0em;
+    font-weight: bold;
+    @extend %navItem;
+
+    &:first-of-type{
+      padding-top: 7px;
+    }
+  }
+
+  #sidebar-collapse {
+    padding: 0px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .navbar {
+      width: 25px;
+    }
+
+    .navbar-collapse, .sidebar-nav {
+      display: none;
+    }
+  }
+}

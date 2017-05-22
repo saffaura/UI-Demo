@@ -1,0 +1,121 @@
+dashboard {
+  $backgroundColor: #f7f7f7;
+
+  display: table-cell;
+  vertical-align: top;
+  width: calc(100% - 280px);
+  background-color: $backgroundColor;
+  -webkit-box-shadow: inset 0px 4px 11px -7px rgba(50, 50, 50, 0.75);
+  box-shadow: inset 0px 4px 11px -7px rgba(50, 50, 50, 0.75);
+
+  %infoText {
+    margin: 2px;
+    font-size: 1.0em;
+  }
+
+  .info-wrapper {
+    border-right: solid 1px $backgroundColor;
+    padding: 50px 30px 30px;
+    width: 20%;
+    float: left;
+
+    @media screen and (max-width: 1470px) {
+      padding: 50px 15px 30px;
+    }
+
+    @media screen and (max-width: 1325px) {
+      padding: 50px 10px 30px;
+    }
+
+    @media screen and (max-width: 1150px) {
+      padding: 50px 30px 30px;
+      width: 33%;
+      border: none;
+    }
+
+    @media screen and (max-width: 1095px) {
+      padding: 30px 10px 0px;
+      width: 50%;
+      border: none;
+      margin-bottom: -15px;
+    }
+
+    @media screen and (max-width: 470px) {
+      padding: 10px;
+      width: 100%;
+      border: none;
+
+      p {
+        font-size: 4em;
+      }
+    }
+
+    &:last-of-type{
+      border-right: none;
+    }
+
+    i {
+      display: inline-block;
+      border: 1px solid #ededed;
+      padding: 2px 2px;
+      width: 24px;
+      text-align: center;
+      vertical-align: top;
+      margin: 2px 6px 0 0;
+      font-size: 1.3em;
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: -8px;
+      font-size: 5em;
+      font-family: "helvetica-neue", sans-serif;
+    }
+  }
+
+  .info-header {
+    display: inline-block;
+
+    @media screen and (max-width: 1270px) {
+      display: block;
+    }
+
+    @media screen and (max-width: 1150px) {
+      display: inline-block;
+    }
+
+    h5 {
+      @extend %infoText;
+      text-transform: uppercase;
+      font-family: "proxima-nova-bold", sans-serif;
+      font-weight: bold;
+    }
+
+    h6 {
+      @extend %infoText;
+      color: #bdc2ca;
+    }
+  }
+
+  #content {
+    padding: 25px 28px;
+  }
+
+  #info-panel {
+    background-color: white;
+    width: 100%;
+    margin: 0px;
+    padding-left: 30px;
+  }
+
+  #header {
+    font-family: "proxima-nova-thin", sans-serif;
+    font-weight: bold;
+    padding: 10px 40px;
+  }
+
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 25px);
+  }
+
+}
