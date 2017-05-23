@@ -1,5 +1,5 @@
 # UI Demo
-A sample webpage based on a mockup
+A sample webpage based on a mockup. [Check out the demo](https://calm-hollows-52424.herokuapp.com/)
 
 ## Prerequisites
 **[Node.js](https://nodejs.org/en/download/)**, **[git](https://git-scm.com/downloads)**
