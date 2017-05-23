@@ -35,8 +35,7 @@
         'content': 'Great job, Groot!',
         'time': '5:44 pm'
       }
-    }];
+  }];
 
-    console.log('messages: ' + $scope.messages[0].user.username);
   }]);
 })();
