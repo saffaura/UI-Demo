@@ -6,13 +6,13 @@
         templateUrl: 'sidebarRight/sidebarRight.html',
         link: function(scope, element, attr) {
           scope.followers = [
-            "images/follower1.png",
-            "images/follower2.png",
-            "images/follower3.png",
-            "images/follower4.png",
-            "images/follower5.png",
-            "images/follower7.png",
-            "images/follower8.png"
+            "images/follower1.jpg",
+            "images/follower2.jpg",
+            "images/follower3.jpg",
+            "images/follower4.jpg",
+            "images/follower5.jpg",
+            "images/follower7.jpg",
+            "images/follower8.jpg"
           ];
         }
       };
