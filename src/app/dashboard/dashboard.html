@@ -1,0 +1,17 @@
+<div width="100%">
+  <h2 id="header">Dashboard</h2>
+  <div id="info-panel" class="row">
+    <div class="info-wrapper" ng-repeat="item in items">
+      <i ng-class="item.icon"></i>
+      <div class="info-header">
+        <h5>{{item.title}}</h5>
+        <h6>{{item.date}}</h6>
+      </div>
+      <p class="info-count">{{item.count}}</p>
+    </div>
+  </div>
+  <div id="content">
+    <message-board class="col-xs-12 col-sm-6"></message-board>
+    <network class="col-xs-12 col-sm-6"></network>
+  </div>
+</div>

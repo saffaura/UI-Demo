@@ -1,0 +1,13 @@
+<div>
+  <div id="board-header">
+    <h5>Corporate message board</h5>
+    <div id="button-panel">
+      <button class="btn btn-default">Post message</button>
+      <button class="btn btn-default" id="settings-btn"><i class="fa fa-gear"></i></button>
+    </div>
+  </div>
+
+  <div id="message-panel" ng-repeat="message in messages">
+    <post-wrapper message="message"></post-wrapper>
+  </div>
+</div>

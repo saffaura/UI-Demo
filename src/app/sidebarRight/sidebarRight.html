@@ -1,0 +1,58 @@
+<nav id="sidebar-wrapper" role="navigation">
+  <button type="button" class="collapsed btn-link" aria-expanded="false">
+    <span class="sr-only">Toggle navigation</span>
+    <i class="fa fa-chevron-right"></i>
+  </button>
+  <div class="nav-content" id="sidebar-right-collapse">
+    <div class="section">
+      <div class="follow-panel">
+        <h5>Following (13)</h5>
+        <hr>
+        <div class="image-panel">
+          <img ng-src="{{follower}}" ng-repeat="follower in followers" class="follower-img"></img>
+        </div>
+      </div>
+      <div class="follow-panel">
+        <h5> Followers (98)</h5>
+        <hr/>
+        <div class="image-panel">
+          <img ng-src="{{follower}}" ng-repeat="follower in followers" class="follower-img"></img>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h5> Recent Items</h5>
+      <hr/>
+      <div class="recent-icon">
+        <i class="fa fa-diamond"></i>
+        <i class="fa fa-phone"></i>
+      </div>
+      <div class="recent-text">
+        <p>Locate infinity gems</p>
+        <p>Call Nebula</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h5>Links</h5>
+      <hr/>
+      <a>Corporate website</a>
+      <a>Google Analytics</a>
+      <a>Corporate Google Docs</a>
+      <a>Book Online</a>
+      <a>Armor Functionality Update</a>
+      <a>Help Manuals</a>
+      <a>Mobile Video Game Theater Homepage</p>
+    </div>
+
+    <div class="section">
+      <h5>Discussion Groups</h5>
+      <hr/>
+      <a>Marketing Strategy</a>
+      <a>B2B</a>
+      <a>Operational Standards</a>
+      <a>How to Discussion Group</a>
+    </div>
+  </div>
+  </nav>

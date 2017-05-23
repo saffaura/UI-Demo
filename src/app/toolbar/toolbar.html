@@ -1,0 +1,48 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toolbar-collapse" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Vonigo</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="toolbar-collapse">
+      <div class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search" autocomplete="on"  list="search">
+          <datalist id="search">
+            <option value="Nebula">
+            <option value="Thanos">
+          </datalist>
+          <i class="fa fa-chevron-down list-icon"></i>
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+          </span>
+        </div><!-- /input-group -->
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <div class="btn-group">
+            <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Create New <i class="fa fa-chevron-down btn-dropdown"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Something here</a></li>
+              <li><a href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="user-nav"><a href="#"><i class="fa fa-calendar"></i><span class="badge">9</span></a></li>
+        <li class="user-nav"><a href="#"><i class="fa fa-user-o"></i></a></li>
+        <li style="padding-right: 8px;" class="user-nav"><a href="#"><i class="fa fa-list"></i><span class="badge">2</span></a></li>
+        <li><a href="#" id="username">{{username}}</a></li>
+        <li id="userimg"><a href="#"></a><img ng-src="{{userimg}}"></img></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

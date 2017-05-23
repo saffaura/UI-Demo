@@ -1,0 +1,41 @@
+<div>
+  <div class="message-header">
+    <img class="user-img" ng-src="{{message.user.image}}"></img>
+    <div class="header-wrapper">
+      <h5>{{message.user.username}}</h5>
+      <h6>{{message.date}}</h6>
+    </div>
+  </div>
+
+  <div class="message-content">
+    <p>{{message.content}}</p>
+  </div>
+  <div class="message-img" ng-show="message.image">
+    <img ng-src="{{message.image}}"></img>
+  </div>
+  <div class="message-attachment" ng-show="message.attachment">
+    <i class="fa fa-paperclip fa-flip-horizontal"></i>
+    <a href="#" class="file-name">{{message.attachment.name}}</a>
+    <p class="file-type">{{message.attachment.type}}</p>
+    <p class="file-size">{{message.attachment.size}}</p>
+  </div>
+
+  <div class="comments">
+    <div class="extra-comments" ng-show="message.comments && message.comments.length > 1">
+      <a href="#">View {{message.comments.length}} more comments</a>
+    </div>
+    <div class="comment" ng-show="message.comments">
+      <img class="user-img-sm" ng-src="{{message.comments.userimg}}"></img>
+      <div class="comment-content">
+        <h5>{{message.comments.username}}</h5>
+        <h6 ng-show="message.comments.time">{{message.comments.time}}</h6>
+        <p>{{message.comments.content}}</p>
+      </div>
+    </div>
+    <textarea class="comment-input" rows="1" cols="10" placeholder="Add your comment..." ></textarea>
+    <div id="comment-btn-panel" style="display: none;">
+      <button class="btn btn-default">Post comment</button>
+      <button class="btn btn-default cancel">Cancel</button>
+    </div>
+  </div>
+</div>
