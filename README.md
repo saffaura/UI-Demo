@@ -4,10 +4,7 @@ A sample webpage based on a mockup
 ## Prerequisites
 **[Node.js](https://nodejs.org/en/download/)**
 
-**[bower](https://bower.io/)**
-```
-npm install -g bower
-```
+**[git](https://git-scm.com/downloads)**
 
 ## Running the Application
 
