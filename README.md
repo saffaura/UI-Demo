@@ -2,9 +2,7 @@
 A sample webpage based on a mockup
 
 ## Prerequisites
-**[Node.js](https://nodejs.org/en/download/)**
-
-**[git](https://git-scm.com/downloads)**
+**[Node.js](https://nodejs.org/en/download/)**, **[git](https://git-scm.com/downloads)**
 
 ## Running the Application
 
