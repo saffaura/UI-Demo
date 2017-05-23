@@ -80,7 +80,6 @@ gulp.task('assets', function() {
   }));
 });
 
-
 gulp.task('serve', function() {
   gulp.start(['build', 'browser-sync']);
   gulp.watch('./src/scss/**/*.scss', ['sass']);
