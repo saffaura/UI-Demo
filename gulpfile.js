@@ -89,4 +89,4 @@ gulp.task('serve', function() {
   gulp.watch("./src/assets/**/*.*", ['assets']);
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['build']);
