@@ -11,7 +11,6 @@ A sample webpage based on a mockup
 Run the following commands in the project directory
 ```
 npm install
-bower install
 npm start
 ```
 
